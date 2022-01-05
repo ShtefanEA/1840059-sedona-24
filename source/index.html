@@ -7,23 +7,23 @@
 </head>
 
 <body>
-  <header class="page-header">
+  <header class="page-header__container">
     <div class="page-header__container">
       <nav class="navigation">
         <ul class="navigation__user">
           <li class="navigation__link navigation__link--active">
             <a href="index.html">Главная</a>
           </li>
-          <li class="navigation_link">
+          <li class="navigation__link">
             <a href="catalog.html">О Седоне</a>
           </li>
-          <li class="navigation_link">
+          <li class="navigation__link">
             <a href="catalog.html">Гостиницы</a>
           </li>
         </ul>
       </nav>
       <a class="logo" href="/"><img src="img/sedona.svg" width="138" height="70" alt="Логотип Гостиницы «SEDONA»."></a>
-      <ul class="navigation_user">
+      <ul class="navigation__user">
         <li class="navigation__user-item">
           <a class="navigation__user-link" href="#">
             <span class="visually-hidden">Поиск</span>
@@ -72,10 +72,10 @@
         <p class="advantages__lead">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="advantages__subtitle">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </div>
-      <ol class="advantages__list__item">
+      <ol class="advantages__list-item">
         <li class="advantages__item-full">
           <div class="advantages__item-inner">
-            <h3 class="advantages__title advantages__title-white">Настоящий городок</h3>
+            <h3 class="advantages__title advantages__title-_white">Настоящий городок</h3>
             <p class="advantages__num">— №1 —</p>
             <p class="advantages__description">Седона — не аттракцион для&nbsp;туристов, там течёт
               своя&nbsp;жизнь
@@ -84,18 +84,18 @@
           <img class="advantages__image-right" src="img/photo-1.jpg" width="800" height="384"
             alt="Фото гостиницы Седона.">
           <ul class="advantages__sublist">
-            <li class="advantages__sublist-item advantages__sublist-item-hotel">
+            <li class="advantages__sublist-item advantages__sublist-item--hotel">
               <h3 class="advantages__title">ЖИЛЬЕ</h3>
               <p class="advantages__description">Рекомендуем пожить в&nbsp;настоящем мотеле,
                 все&nbsp;как&nbsp;в&nbsp;кино!</p>
             </li>
-            <li class="advantages__sublist-item advantages__sublist-item-food">
+            <li class="advantages__sublist-item advantages__sublist-item--food">
               <h3 class="advantages__title">ЕДА</h3>
               <p class="advantages__description">Всегда заказывайте топовый&nbsp;фирменный бургер,
                 вы&nbsp;не&nbsp;разочаруетесь!
               </p>
             </li>
-            <li class="advantages__sublist-item advantages__sublist-item-souvenir">
+            <li class="advantages__sublist-item advantages__sublist-item--souvenir">
               <h3 class="advantages__title">СУВЕНИРЫ</h3>
               <p class="advantages__description">Не только китайского, но&nbsp;и&nbsp;настоящего местного производства!
               </p>
@@ -106,7 +106,7 @@
           <img class="advantages__image-left" src="img/photo-2.jpg" width="800" height="384"
             alt="Фото природы вокруг гостиницы Седона.">
           <div class="advantages__item-inner">
-            <h3 class="advantages__title  advantages-title-white">Там есть
+            <h3 class="advantages__title  advantages-title--white">Там есть
               мост дьявола</h3>
             <p class="advantages__num">— №2 —</p>
             <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется
@@ -131,24 +131,11 @@
       </ol>
     </section>
     <section class="appointment">
-      <div class="page-container contacts">
+      <div class="page-container appointment__contacts">
         <h2 class="appointment__title">Заинтересовались?</h2>
         <p class="appointment__button">Укажите предполагаемые даты поездки, <br>
           и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;Седоне</p>
         <button class="button-search">Поиск гостиницы в Седоне</button>
-      </div>
-    </section>
-    <section class="background-footer">
-      <div class="page-container">
-        <h2 class="contacts__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
-        <p class="contacts__subtitle">Только полезная информация и никакого спама, честное байскаутское!</p>
-        <div class="contacts">
-          <label class="appointment__name">
-            <input type="email" name="email" placeholder="Ваш е-mail" class="appointment-form-name" required>
-          </label>
-          <button class="contacts__button" type="submit">ПОДПИСАТЬСЯ</button>
-          </form>
-        </div>
       </div>
     </section>
   </main>
@@ -156,7 +143,7 @@
     <div class="page-container footer__container">
       <ul class="footer__social">
         <Li class="footer__link">
-          <a class="footer__social-link footer__social--tw" href="#">
+          <a class="footer__social-link footer__social-link--tw" href="#">
             <span class="visually-hidden">Twitter</span>
           </a>
           <span class="visually-hidden">html academy</span>
@@ -196,7 +183,6 @@
               d="M109.4 27.0001L105.8 18.1001H103.6L108.4 29.7001C108.1 30.6001 107.7 30.9001 106.7 30.9001H104.2V32.9001H106.7C108.5 32.9001 109.5 32.1001 110.2 30.3001L114.9 18.1001H112.8L109.4 27.0001Z"
               fill="currentColor" />
           </svg>
-          </a>
     </div>
   </footer>
   </div>
