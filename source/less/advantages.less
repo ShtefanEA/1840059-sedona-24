@@ -1,0 +1,162 @@
+.advantages-list {
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.advantages-item {
+  color: #333333;
+}
+
+.advantages-item-full {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-item-full .advantages-item-inner {
+  background: #83B3D3;
+  color: #ffffff;
+}
+
+.advantages-title {
+  max-width: 172px;
+  margin: 0 auto 30px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.advantages-title-white {
+  color: #ffffff;
+}
+
+.advantages-num {
+  margin: 0 0 30px;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages-description {
+  max-width: 230px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.advantages-sublist {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-sublist-item {
+  padding: 86px 50px 89px;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.advantages-sublist-item:nth-of-type(odd) {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-sublist-item::before {
+  content: "";
+  display: block;
+  margin: 0 auto 25px;
+  width: 75px;
+  height: 75px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.advantages-sublist-item-hotel::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='75' height='72' viewBox='0 0 75 72' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M29.7 65H45.7V41.2H29.7C29.7 41.2 29.7 65 29.7 65ZM32.6 44.0999H42.7V62.0999H32.6V44.0999Z' fill='%2381B3D2'/%3E%3Cpath d='M72.8 39.3L74.9 37.2L65 27.3V0H51.1V13.6L37.5 0L0.199997 37.2L2.3 39.3L10.1 31.5V69.1H6.1V72H70V69.1H64.9V31.5L72.8 39.3ZM62 69.1H13V28.5L37.5 4.1L62 28.5V69.1ZM62 24.4L54.1 16.5V2.9H62V24.4Z' fill='%2381B3D2'/%3E%3Cpath d='M29.9 27.1C29.9 31.4 33.4 34.8 37.6 34.8C41.9 34.8 45.4 31.3 45.4 27.1C45.4 22.8 41.9 19.4 37.6 19.4C33.4 19.4 29.9 22.8 29.9 27.1ZM37.7 22.1C40.4 22.1 42.7 24.3 42.7 27C42.7 29.7 40.5 31.9 37.7 31.9C35 31.9 32.7 29.7 32.7 27C32.7 24.3 34.9 22.1 37.7 22.1Z' fill='%2381B3D2'/%3E%3Cpath d='M20.1 41.2H17.1V45.0999H20.1V41.2Z' fill='%2381B3D2'/%3E%3Cpath d='M26 41.2H23V45.0999H26V41.2Z' fill='%2381B3D2'/%3E%3Cpath d='M20.1 47.2H17.1V51.0999H20.1V47.2Z' fill='%2381B3D2'/%3E%3Cpath d='M26 47.2H23V51.0999H26V47.2Z' fill='%2381B3D2'/%3E%3Cpath d='M52 41.2H49V45.0999H52V41.2Z' fill='%2381B3D2'/%3E%3Cpath d='M57.9 41.2H54.9V45.0999H57.9V41.2Z' fill='%2381B3D2'/%3E%3Cpath d='M52 47.2H49V51.0999H52V47.2Z' fill='%2381B3D2'/%3E%3Cpath d='M57.9 47.2H54.9V51.0999H57.9V47.2Z' fill='%2381B3D2'/%3E%3C/svg%3E%0A");
+  background-size: 75px 72px;
+}
+
+.advantages-sublist-item-food::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='74' height='70' viewBox='0 0 74 70' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M69.9 46.7H59.3H14.6H4.1C1.8 46.7 0 48.6 0 51V54.5C0 56.9 1.9 58.7999 4.1 58.7999H5V59.9C5 65.4 9.3 70 14.6 70H59.2C64.5 70 68.8 65.5 68.8 59.9V58.7999H69.7C72 58.7999 73.8 56.9 73.8 54.5V51C74 48.7 72.1 46.7 69.9 46.7ZM66 59.9C66 63.8 63 66.9 59.3 66.9H14.6C10.9 66.9 7.9 63.7 7.9 59.9V58.7999H66V59.9ZM71.1 54.5C71.1 55.2 70.5 55.7999 69.9 55.7999H68.9H66H8H5H4C3.3 55.7999 2.8 55.2 2.8 54.5V51C2.8 50.3 3.4 49.7 4 49.7H7.7H14.6H59.2H66.1H69.8C70.5 49.7 71 50.3 71 51C71.1 51 71.1 54.5 71.1 54.5Z' fill='%2381B3D2'/%3E%3Cpath d='M15.6 38.4L21 42.5L26.3 38.4L31.6 42.5L36.9 38.4L42.3 42.5L47.6 38.4L52.9 42.5L58.3 38.4L63.6 42.5L69.8 37.8L68.1 35.3L63.6 38.7L58.3 34.6L52.9 38.7L47.6 34.6L42.3 38.7L36.9 34.6L31.6 38.7L26.3 34.6L21 38.7L15.6 34.6L10.3 38.7L5.79998 35.3L4.09998 37.8L10.3 42.5L15.6 38.4Z' fill='%2381B3D2'/%3E%3Cpath d='M8 31.5H65.9H68.8C68.8 30.9 68.9 30.3 68.9 29.6C68.9 29.2 68.9 28.8 68.9 28.4C68.2 12.7 54.2 0 37 0C19.7 0 5.7 12.7 5 28.5C5 28.9 5 29.3 5 29.7C5 30.3 5 31 5.1 31.6H8V31.5ZM37 3C52.6 3 65.4 14.3 66 28.5H8C8.6 14.4 21.4 3 37 3Z' fill='%2381B3D2'/%3E%3Cpath d='M37 17.3C38.0493 17.3 38.9 16.4046 38.9 15.3C38.9 14.1955 38.0493 13.3 37 13.3C35.9506 13.3 35.1 14.1955 35.1 15.3C35.1 16.4046 35.9506 17.3 37 17.3Z' fill='%2381B3D2'/%3E%3Cpath d='M29.2 12.2C30.2493 12.2 31.1 11.3045 31.1 10.2C31.1 9.09538 30.2493 8.19995 29.2 8.19995C28.1506 8.19995 27.3 9.09538 27.3 10.2C27.3 11.3045 28.1506 12.2 29.2 12.2Z' fill='%2381B3D2'/%3E%3Cpath d='M44.7 12.2C45.7493 12.2 46.6 11.3045 46.6 10.2C46.6 9.09538 45.7493 8.19995 44.7 8.19995C43.6506 8.19995 42.8 9.09538 42.8 10.2C42.8 11.3045 43.6506 12.2 44.7 12.2Z' fill='%2381B3D2'/%3E%3C/svg%3E%0A");
+  background-size: 74px 70px;
+}
+
+.advantages-sublist-item-souvenir::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='64' height='76' viewBox='0 0 64 76' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_3_120)'%3E%3Cpath d='M61.1 22.5H61H36.3C50.1 15.6 51.2 11.2 50.7 8.79997C49.5 4.79997 45 1.79997 40.7 3.39997C35.1 5.49997 33.6 13.8 32.1 19.8C30.1 13.7 28.3 5.99997 23.9 2.09997C22.6 0.999966 20.8 -0.200034 18.1 0.0999663C14.1 0.499966 8.3 5.49997 10.6 11.1C12.9 16.5 20.3 19.9 25.2 22.6H3.2H2.9C1.3 22.6 0 23.9 0 25.5V36.8C0 38.4 1.3 39.7 2.9 39.7H3.2V73V75.4V76H61V75.5V73V39.6H61.1C62.7 39.6 64 38.3 64 36.7V25.4C64 23.8 62.7 22.5 61.1 22.5ZM42.4 5.89997C44.5 5.59997 47.4 7.19997 47.7 9.09997C48.1 11.9 44.3 14.4 42.6 15.5C40.1 17.2 37.7 18.1 35.3 19.6C36.2 15.9 37.8 6.59997 42.4 5.89997ZM19.5 15.9C17.3 14.4 13 11.5 13.1 8.09997C13.2 4.49997 18.8 1.49997 21.9 4.19997C25.8 7.59997 27.6 15.3 29 20.8C25.8 19.3 22.7 18 19.5 15.9ZM25.5 73H6.1V39.6H25.5V73ZM25.5 36.5H3V25.5H25.5V36.5ZM35.7 36.5V39.5V73H28.5V39.6V36.6V25.6H35.7V36.5ZM58 73H38.6V39.6H58V73ZM60.9 36.5H38.6V25.5H60.9V36.5Z' fill='%2381B3D2'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_3_120'%3E%3Crect width='64' height='76' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+  background-size: 64px 76px;
+}
+
+.advantages-sublist-item .advantages-title {
+  margin-bottom: 18px;
+}
+
+.advantages-lead {
+  margin: 0 0 32px;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages-image-right {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  grid-column: 2/4;
+  width: 100%;
+  max-height: 100%;
+}
+
+.advantages-image-left {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  grid-column: 1/3;
+  width: 100%;
+  max-height: 100%;
+}
+
+.advantages-subtitle {
+  margin: 0;
+  font-size: 22px;
+  line-height: 36px;
+  text-align: center;
+  vertical-align: top;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.advantages-house {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  list-style-type: none;
+}
+
+.advantages-item-inner {
+  min-height: 384px;
+  box-sizing: border-box;
+  padding: 97px 50px 77px;
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-inner-blue {
+  background: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-gift {
+  background-color: white;
+}

@@ -1,0 +1,153 @@
+.navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.navigation-user {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-user-item {
+  margin-left: 28px;
+}
+
+.navigation-user-link {
+  position: relative;
+  display: block;
+  outline: none;
+  color: #000000;
+}
+
+.navigation-user-count {
+  position: absolute;
+  top: -10px;
+  right: -12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background: #7DB550;
+  font-size: 10px;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: -0.1em;
+  color: #FFFFFF;
+}
+
+.navigation-user-link:hover {
+  color: #756257;
+}
+
+.navigation-user-link:active {
+  color: #756257;
+  opacity: 0.6;
+}
+
+.navigation-user-link:focus-visible::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  bottom: -10px;
+  left: -10px;
+  border: 3px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.navigation-user-link svg {
+  display: block;
+}
+
+.navigation-link {
+  margin-right: 34px;
+}
+
+.navigation-link > a {
+  position: relative;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none;
+  outline: none;
+}
+
+.navigation-link > a:hover {
+  color: #756257;
+}
+
+.navigation-link > a:active {
+  color: #756257;
+  opacity: 0.3;
+}
+
+.navigation-link > a:focus-visible::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  right: -12px;
+  bottom: -6px;
+  left: -12px;
+  border: 3px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.navigation-link.active a::after {
+  content: "";
+  position: absolute;
+  bottom: -21px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #756257;
+}
+
+.navigation-link-button {
+  padding: 8px 36px;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #756257;
+  border-radius: 4px;
+  box-shadow: none;
+  border: 0;
+  outline-color: #83B3D3;
+  cursor: pointer;
+}
+
+.navigation-link-button:hover {
+  background-color: #615048;
+}
+
+.navigation-link-button:active {
+  outline: none;
+  background-color: #615048;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.navigation-visually-hidden {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #DBDBDB;
+}
