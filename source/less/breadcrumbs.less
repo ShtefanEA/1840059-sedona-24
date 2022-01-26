@@ -1,0 +1,77 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #ffffff;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: -8px;
+  margin-bottom: 41px;
+}
+
+.breadcrumbs-link {
+  cursor: pointer;
+}
+
+.breadcrumbs-home-link {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  vertical-align: middle;
+  background: url("data:image/svg+xml,%3Csvg width='12' height='12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 .3 0 5.8V12h12V5.8L6 .3ZM11 11H1V6.2l5-4.5 5 4.5V11Z' fill='%23fff'/%3E%3Cpath d='M4 10h1V7.5h2V10h1V6.5H4V10Z' fill='%23fff'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center center;
+  outline: none;
+}
+
+.breadcrumbs-item + .breadcrumbs-item {
+  margin-left: 10px;
+}
+
+.breadcrumbs-item {
+  position: relative;
+}
+
+.breadcrumbs-home:after {
+  position: absolute;
+  content: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 5 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.3' clip-path='url(%23clip0_5:562)'%3E%3Cpath d='M4.8 3.60005L0.999999 0.200049C0.799999 4.88311e-05 0.399999 4.88311e-05 0.0999989 0.200049C-0.200001 0.400049 -0.100001 0.800049 0.0999989 1.00005L3.4 4.00005L0.199999 7.00005C-1.11759e-06 7.20005 -1.11759e-06 7.60005 0.199999 7.80005C0.199999 7.90005 0.499999 8.00005 0.599999 8.00005C0.699999 8.00005 0.899999 7.90005 0.999999 7.80005L4.8 4.40005C5.1 4.20005 5.1 3.80005 4.8 3.60005Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_5:562'%3E%3Crect width='5' height='8' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+  top: 3px;
+  right: -8px;
+}
+
+.breadcrumbs-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.breadcrumbs-hotels-link {
+  padding: 3px 8px;
+  outline: none;
+}
+
+.breadcrumbs-link:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-link:focus-visible {
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 3px #83b3d3;
+}
+
+.breadcrumbs-link:active {
+  opacity: 0.3;
+}
+
+.breadcrumbs-hotels-link:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-hotels-link:focus-visible {
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 3px #83b3d3;
+}
+
+.breadcrumbs-hotels-link:active {
+  opacity: 0.3;
+}
