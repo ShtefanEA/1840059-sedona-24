@@ -1,0 +1,33 @@
+.minus {
+  position: absolute;
+  left: 13px;
+  top: 12px;
+  height: 25px;
+  width: 25px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  opacity: 0.3;
+}
+
+.minus::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 12px;
+  height: 1px;
+  width: 13px;
+  background-color: #000000;
+}
+
+.minus:hover,
+.plus:hover {
+  opacity: 1;
+}
+
+.minus:focus-visible,
+.plus:focus-visible {
+  opacity: 1;
+  box-shadow: inset 0 0 0 3px #83b3d3;
+}

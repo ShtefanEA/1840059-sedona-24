@@ -1,0 +1,125 @@
+.hotel-list-container {
+  padding-top: 43px;
+}
+
+.hotel-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hotel-card {
+  display: grid;
+  grid-template-columns: min-content auto auto;
+  grid-column-gap: 23px;
+  padding-top: 26px;
+  padding-bottom: 29px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.hotel-card:first-child {
+  border-top: 1px solid #e6e6e6;
+}
+
+.hotel-card-content-container {
+  padding-right: 20px;
+  text-align: left;
+}
+
+.hotel-type-price-container {
+  display: grid;
+  grid-template-columns: 155px 160px;
+  row-gap: 32px;
+  column-gap: 4px;
+  text-align: start;
+  padding-left: 15px;
+  padding-top: 2px;
+}
+
+.hotel-card-buttons {
+  display: flex;
+}
+
+.hotel-card-image {
+  width: 180px;
+  vertical-align: middle;
+}
+
+.hotel-card-rating-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  padding-top: 7px;
+}
+
+.hotel-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  text-align: left;
+  text-decoration: none;
+  color: #000000;
+  margin: 0;
+  margin-top: -3px;
+  margin-bottom: 4px;
+  padding: 4px 16px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.hotel-card-title:hover {
+  color: #756257;
+}
+
+.hotel-card-title:focus-visible {
+  color: #756257;
+  outline: 3px solid #83B3D3;
+  outline-offset: 0;
+}
+
+.hotel-card-title:active {
+  color: #756257;
+  opacity: 0.3;
+}
+
+.hotel-type, .hotel-price {
+  line-height: 23px;
+  padding-right: 20px;
+}
+
+.hotel-detail-button,
+.add-to-favorites-button {
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 21px;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.hotel-detail-button {
+  background-color: #756257;
+  width: 151px;
+}
+
+.hotel-detail-button:hover {
+  background-color: #615048;
+}
+
+.hotel-detail-button:active {
+  outline: none;
+  background-color: #615048;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.hotel-detail-button:focus-visible {
+  outline: 3px solid #83B3D3;
+  outline-offset: -2px;
+}
+
+.add-to-favorites-button {
+  background-color: #83b3d3;
+  width: 160px;
+}

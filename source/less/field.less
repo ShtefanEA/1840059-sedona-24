@@ -1,0 +1,55 @@
+.field-group {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.field {
+  box-sizing: border-box;
+  font: inherit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  background-color: #f2f2f2;
+  height: 50px;
+  padding-left: 20px;
+  padding-bottom: 12px;
+  padding-top: 2px;
+  padding-right: 45px;
+}
+
+.field-group + .field-group {
+  margin-top: 40px;
+}
+
+.field-group-input {
+  margin: 0;
+}
+
+.field-search-day:hover {
+  background-color: #e6e6e6;
+}
+
+.field-search-day:focus-visible {
+  background-color: #e6e6e6;
+  box-shadow: inset 0 0 0 3px #83b3d3;
+}
+
+.field-search-day:not(:placeholder-shown) {
+  background-color: #ffffff;
+  box-shadow: inset 0 0 0 3px #000000;
+  color: #000000;
+}
+
+.field-search-day-active {
+  background-color: #ffffff;
+  box-shadow: inset 0 0 0 3px #000000;
+  color: #000000;
+}
