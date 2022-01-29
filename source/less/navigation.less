@@ -6,7 +6,7 @@
   list-style-type: none;
 }
 
-.navigation-user {
+.navigation__user {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -16,18 +16,18 @@
   margin: 0;
 }
 
-.navigation-user-item {
+.navigation__user-item {
   margin-left: 28px;
 }
 
-.navigation-user-link {
+.navigation__user-link {
   position: relative;
   display: block;
   outline: none;
   color: #000000;
 }
 
-.navigation-user-count {
+.navigation__user-count {
   position: absolute;
   top: -10px;
   right: -12px;
@@ -45,16 +45,16 @@
   color: #FFFFFF;
 }
 
-.navigation-user-link:hover {
+.navigation__user-link:hover {
   color: #756257;
 }
 
-.navigation-user-link:active {
+.navigation__user-link:active {
   color: #756257;
   opacity: 0.6;
 }
 
-.navigation-user-link:focus-visible::before {
+.navigation__user-link:focus-visible::before {
   content: "";
   position: absolute;
   top: -10px;
@@ -66,15 +66,15 @@
   border-radius: 10px;
 }
 
-.navigation-user-link svg {
+.navigation__user-link svg {
   display: block;
 }
 
-.navigation-link {
+.navigation__link {
   margin-right: 34px;
 }
 
-.navigation-link > a {
+.navigation__link > a {
   position: relative;
   font-size: 20px;
   line-height: 26px;
@@ -84,16 +84,16 @@
   outline: none;
 }
 
-.navigation-link > a:hover {
+.navigation__link > a:hover {
   color: #756257;
 }
 
-.navigation-link > a:active {
+.navigation__link > a:active {
   color: #756257;
   opacity: 0.3;
 }
 
-.navigation-link > a:focus-visible::before {
+.navigation__link > a:focus-visible::before {
   content: "";
   position: absolute;
   top: -6px;
@@ -105,7 +105,7 @@
   border-radius: 10px;
 }
 
-.navigation-link.active a::after {
+.navigation__link.active a::after {
   content: "";
   position: absolute;
   bottom: -21px;
@@ -115,7 +115,7 @@
   background-color: #756257;
 }
 
-.navigation-link-button {
+.navigation__link-button {
   padding: 8px 36px;
   font-family: inherit;
   font-weight: bold;
@@ -132,17 +132,17 @@
   cursor: pointer;
 }
 
-.navigation-link-button:hover {
+.navigation__link-button:hover {
   background-color: #615048;
 }
 
-.navigation-link-button:active {
+.navigation__link-button:active {
   outline: none;
   background-color: #615048;
   color: rgba(255, 255, 255, 0.3);
 }
 
-.navigation-visually-hidden {
+.navigation__visually-hidden {
   position: absolute;
   top: 0;
   right: 0;
