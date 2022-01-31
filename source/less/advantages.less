@@ -7,6 +7,11 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
+.advantages__main {
+  width: 30%;
+  display: inline-block
+}
+
 .advantages__item {
   color: #333333;
 }
@@ -159,4 +164,16 @@
 
 .advantages__gift {
   background-color: white;
+}
+
+@media (max-width: @mobile-width) {
+  .advantages__main {
+    width: 100%;
+  }
+}
+
+@media (width: @mobile-width) {
+  .advantages__item-full {
+    grid-template-columns: repeat(auto-fit, 1fr);
+  }
 }
