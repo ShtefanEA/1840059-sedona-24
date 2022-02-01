@@ -166,14 +166,21 @@
   background-color: white;
 }
 
-@media (max-width: 100%) {
+@media (max-width: 768px) {
   .advantages__main {
     width: 100%;
   }
 }
 
-@media (width: repeat(auto-fit, 1fr)) {
+@media (max-width: 768px) {
   .advantages__item-full {
-    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+}
+
+@media (max-width: 768px) {
+  .advantages__main {
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
   }
 }
